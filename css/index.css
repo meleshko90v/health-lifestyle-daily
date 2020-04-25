@@ -1,44 +1,65 @@
-
-
-@media (min-width: 576px) .container {
-    max-width: 540px;
-}
-
-@media (min-width: 768px) .container {
-    max-width: 720px;
-}
-
-@media (min-width: 992px) .container {
-    max-width: 960px;
-}
-
-@media (min-width: 1200px) .container {
-    max-width: 1140px;
-}
-
+@media (min-width: 576px) {
     .container {
-        padding-left: 0px;
-        padding-right: 0px;
+        max-width: 540px;
     }
+}
 
-    .container-fluid {
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
     }
+}
 
-
-    .col-lg-6 {
-        padding: 0px;
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
     }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.main-header-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar {
+    display: inline-block;
+}
+
+body {
+    background-color: #f9f9f9;
+}
 
 .search {
     display: inline-flex;
-    border: 1px solid black;
-    border-radius: 30px;
     padding: 10px;
+    width: auto;
+    height: 42px;
+    border-radius: 5px;
+    border: solid 1px #e1e1e1;
 }
 
 .search-icon {
@@ -49,7 +70,7 @@
 }
 
 .search-field {
-    width: 300px;
+    width: auto;
     border: 0;
 }
 
@@ -61,43 +82,12 @@
     /* стили для иконки при фокусе поля */
 }
 
-.sidebar-wrap {
-    background: #f9f9f9;
-    position: absolute;
-    right: 0;
-    width: 316px;
-    height: 100%;
-}
-
-.navbar {
-    position: initial;
-    z-index: 1;
-    text-transform: none;
-    justify-content: center;
-    width: 100%;
-    height: 91px;
-    background-color: #ffffff !important;
-}
-
-.search {
-    width: 231px;
-    height: 42px;
-    border-radius: 5px;
-    border: solid 1px #e1e1e1;
-}
-
-.collapse {
-    width: 457px;
-    height: 19px;
-    font-family: ProximaNova;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.7;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000000;
+.heder-menu {
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .logo {
@@ -105,10 +95,34 @@
     height: 44px;
 }
 
+.menu {
+    font-family: proximanova_rg, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.7;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.nav, .nav li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    padding: 3px 15px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background: white;;
+}
+
 .sb-title {
-    width: 131px;
-    height: 17px;
-    font-family: ProximaNova;
+    font-family: proximanova_bl, serif;
     font-size: 24px;
     font-weight: 600;
     font-stretch: normal;
@@ -117,26 +131,58 @@
     letter-spacing: normal;
     text-align: left;
     color: #898989;
+    border-bottom: 3px solid #ebebeb;
+}
+
+.link a {
+    font-family: proximanova_bl, serif;
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: center;
+    color: #0000ff !important;
+}
+
+.link {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #0000ff !important;
+}
+
+.post-wrap .post-content p a .link1 {
+    color: #0000ff !important;
+}
+
+.linkleft .link2 {
+    text-align: left;
+    font-family: proximanova_bl, serif;
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    color: #0000ff !important;
 }
 
 .inscription {
-    width: 218px;
-    height: 18px;
-    font-family: ProximaNova;
+    font-family: proximanova_rg, serif;
     font-size: 24px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
-    line-height: 3.25;
+    line-height: 2.5;
     letter-spacing: normal;
     text-align: left;
     color: #f88e97;
 }
 
 .post-title {
-    width: auto;
-    height: auto;
-    font-family: ProximaNova;
+    font-family: proximanova_rg, sans-serif;
     font-size: 49px;
     font-weight: 600;
     font-stretch: normal;
@@ -145,17 +191,49 @@
     letter-spacing: normal;
     text-align: left;
     color: #fe0000;
+    margin: 40px 0px 20px 0px;
 }
 
 .italics {
-    font-family: ProximaNova-Extrabld;
+    font-family: proximanova_rg, serif;
     font-weight: normal;
 }
 
+.underline {
+    border-bottom: solid 2px;
+    font-family: proximanova_ex, sans-serif;
+    font-size: 49px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: normal;
+}
+
+.jumpstarts {
+    font-family: proximanova_ex, sans-serif;
+    font-size: 49px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.nomore {
+    font-family: proximanova_ex, sans-serif;
+    font-size: 49px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: normal;
+    text-align: center;
+}
+
 .img-description {
-    width: auto;
-    height: auto;
-    font-family: ProximaNova;
+    font-family: proximanova_bl, serif;
     font-size: 19px;
     font-weight: bold;
     font-stretch: normal;
@@ -164,17 +242,41 @@
     letter-spacing: normal;
     text-align: left;
     color: #707070;
+    margin: 10px 0 20px 0;
 }
 
 .social {
     display: flex;
     justify-content: right;
+    margin: 30px 0 20px 0;
+}
+
+.social-icon {
+    width: 79px;
+    height: 35px;
+}
+
+.share {
+    width: 58px;
+    height: 34px;
+    font-family: proximanova_rg, serif;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: center;
+    color: #525252;
+}
+
+.dish {
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .post-content {
-    width: auto;
-    height: auto;
-    font-family: ProximaNova;
+    font-family: proximanova_rg, serif;
     font-size: 20px;
     font-weight: normal;
     font-stretch: normal;
@@ -183,4 +285,120 @@
     letter-spacing: normal;
     text-align: left;
     color: #000000;
+    margin: 40px 0 40px 0;
+}
+
+strong {
+    font-family: proximanova_bl, serif;
+}
+
+.offer {
+    text-align: center;
+}
+
+.offer-title {
+    font-family: proximanova_bl, serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.icon {
+    padding-top: 20px;
+}
+
+.text-name {
+    font-family: verdana, serif;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #3b5998;
+}
+
+.text-comment {
+    font-family: verdana, serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+.text-like {
+    font-family: verdana, serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #898989;
+}
+
+.comments-wrap {
+    margin-top: 40px;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    border-top-style: outset;
+    margin: 15px 0 15px 0;
+}
+
+.img-photo {
+    margin-right: 13px;
+}
+
+.vidhuk {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 40px;
+}
+
+.vidhuk-text {
+    font-family: proximanova_rg, serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    padding-top: 25px;
+}
+
+.vidhuk-img {
+    width: 841px;
+    height: 315px;
+}
+
+.name {
+    font-family: proximanova_rg, serif;
+    font-size: 26px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    border-bottom: outset #ea9399;
+    padding-bottom: 25px;
 }
